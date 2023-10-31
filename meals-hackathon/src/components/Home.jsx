@@ -1,12 +1,15 @@
 
-// imports here 
+import Main from './Main'
+import Nav from './Nav'
 
-const Home = () => {
+
+export default function Home (){
     return (
-        <div>
-            <h2>Homme</h2>
+        
+        <div className="home">
+            <Nav/>
+            <Main/>
         </div>
-    )
+)
 }
 
-export default Home
