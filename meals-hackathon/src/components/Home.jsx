@@ -1,3 +1,4 @@
+
 import Main from './Main'
 import Nav from './Nav'
 
@@ -11,3 +12,4 @@ export default function Home (){
         </div>
 )
 }
+
