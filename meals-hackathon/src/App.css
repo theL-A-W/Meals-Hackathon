@@ -1,3 +1,7 @@
+
+body{
+  background-color: #C4B2B4;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,8 +9,95 @@
   text-align: center;
 }
 .home{
-  background-color: antiquewhite;
+  background-color: #8c808B;
   display: flex;
   height: 30em;
-  width: 30em;
+  border-radius: 5px;
+  width: 40em;
+}
+.nav{
+  background-color: #8c808B;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+#search-bar{
+  font-size: 20px;
+  width: 18em;
+  border: 4px solid #8c808B;
+  border-radius: 5px;
+}
+#submit-search{
+  background-color: white;
+  color: black;
+  padding: 4px 5px;
+
+}
+#submit-search:active{
+  background-color: white;
+  color: black;
+  transform: translateX(-2px);
+  box-shadow: inset 4px 4px 3px 3px #870062;
+}
+.title{
+margin: 0px;
+height: 1.75em;
+  color: #FDD8DB;
+  text-shadow: 0px 0px 0 rgb(239,239,239),
+              -1px 1px 0 rgb(233,233,233),
+              -2px 2px 0 rgb(228,228,228),
+              -3px 3px 0 rgb(222,222,222),
+              -4px 4px 0 rgb(216,216,216),
+              -5px 5px 0 rgb(210,210,210),
+              -6px 6px 0 rgb(204,204,204),
+              -7px 7px 0 rgb(198,198,198),
+              -8px 8px 0 rgb(193,193,193),
+              -9px 9px 0 rgb(187,187,187),
+              -10px 10px 0 rgb(181,181,181),
+              -11px 11px 0 rgb(175,175,175),
+              -12px 12px 0 rgb(169,169,169),
+              -13px 13px 0 rgb(163,163,163),
+              -14px 14px 0 rgb(157,157,157),
+              -15px 15px 0 rgb(152,152,152),
+              -16px 16px 0 rgb(146,146,146),
+              -17px 17px 0 rgb(140,140,140), 
+              -18px 18px 0 rgb(134,134,134),
+              -19px 19px 18px rgba(0,0,0,0.25),
+              -19px 19px 1px rgba(0,0,0,0.5),
+              0px 0px 18px rgba(0,0,0,.2);
+}
+
+.fourth-dimensional {
+  background: rgb(60,180,60);
+  overflow: hidden;
+  span {
+    animation: three-d 3s alternate infinite;
+    display: block;
+    perspective: 30em;
+    transform: rotateY( 30deg );
+    transform-style: preserve-3d;
+  }
+}
+@keyframes three-d {
+  from {
+    text-shadow: -2px 2px 0 #fff;
+    transform: rotateY(0deg);
+  }
+  50% {
+    text-shadow: -6px 6px 0 #fff;
+  }
+  to {
+    text-shadow: -2px 2px 0 #fff;
+    transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+  }
+}
+#menu-card{
+  margin: 20px;
+  display: grid;
+  height: 120px;
+  width: 120px;
+  background-color: #FDD8DB;
+  border-radius: 5px;
 }

@@ -1,14 +1,14 @@
 
-import Main from './Main'
-import Nav from './Nav'
 
 
 export default function Home (){
     return (
         
         <div className="home">
-            <Nav/>
-            <Main/>
+            <div id="menu-card">
+                <div>image</div>
+                <div>title</div>
+            </div>
         </div>
 )
 }

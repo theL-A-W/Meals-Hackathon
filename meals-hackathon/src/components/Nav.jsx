@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom'
 
-// imports
-
-const Nav = () => {
+export default function Nav (){
     return (
-        <div>
-            <h2>Nav</h2>
+        
+        <div className="nav">
+            <div id="nav-itm"><Link to="/"> Home </Link></div>
+            <div id="nav-itm"><Link to="/Categories"> Categories </Link></div>
+            <div id="nav-itm"><Link to="/Contact"> Contact </Link></div>
         </div>
-    )
+)
 }
 
-export default Nav
