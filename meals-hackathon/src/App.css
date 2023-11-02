@@ -1,6 +1,8 @@
 
 body{
-  background-color: #C4B2B4;
+  background-color: #051548c3;
+  display: flex;
+  justify-content: center;
 }
 #root {
   max-width: 1280px;
@@ -14,66 +16,68 @@ body{
   grid-template-columns: auto auto auto;
 }
 .home{
-  background-color: #8c808B;
+  background-color: #db607b;
   padding: 1em;
-  height: fit-content;
   border-radius: 5px;
-  width: 40em;
-  box-shadow: -5px 5px 10px #393438;
-  box-shadow:  0px 0px 0 rgb(239,239,239),
-              -1px 1px 0 rgb(233,233,233),
-              -2px 2px 0 rgb(228,228,228),
-              -3px 3px 0 rgb(222,222,222),
-              -4px 4px 0 rgb(216,216,216),
-              -5px 5px 0 rgb(210,210,210),
-              -6px 6px 0 rgb(204,204,204),
-              -7px 7px 0 rgb(198,198,198),
-              -8px 8px 0 rgb(193,193,193),
-              -9px 9px 0 rgb(187,187,187),
-              -10px 10px 0 rgb(181,181,181),
-              -11px 11px 0 rgb(175,175,175),
-              -12px 12px 0 rgb(169,169,169),
-              -13px 13px 0 rgb(163,163,163),
-              -14px 14px 0 rgb(157,157,157),
-              -15px 15px 0 rgb(152,152,152),
-              -16px 16px 0 rgb(146,146,146),
-              -17px 17px 0 rgb(140,140,140), 
-              -18px 18px 0 rgb(134,134,134),
-              -19px 19px 18px rgba(0,0,0,0.25),
-              -19px 19px 1px rgba(0,0,0,0.5),
-              0px 0px 18px rgba(0,0,0,.2);
+  min-height: 65vh;
+  width: 100vw;
+  box-shadow:  0px 0px 0 #db607b,
+              -1px -1px 0 #d25c75,
+              -3px -2px 0 #c7566e,
+              -5px -3px 0 #bd4f67,
+              -7px -4px 0 #b64b62,
+              -9px -5px 0 #ab455b,
+              -11px -6px 0 #a23f55,
+              -13px -7px 0 #983a4f,
+              -15px -8px 0 #8c3548,
+              -17px -9px 0 #843143,
+              -19px -10px 0 #762b3b,
+              -21px -11px 0 #692534,
+              -23px -12px 0 #5e202e,
+              -25px -13px 0 #541c29,
+              -27px -14px 0 #4c1925,
+              -29px -15px 0 #441621,
+              -31px -16px 0 #37111a,
+              -33px -17px 0 #2f0e16, 
+              -35px -18px 0 #270b12,
+              -36px -19px 18px #270b12d7,
+              -37px -19px 1px #270b1290,
+              0px 0px 18px #270b125d;
 }
 .nav{
-  background-color: #8c808B;
+  color: white;
+  background-color: #db607b;
   display: inline-flex;
-  width: 100%;
+  width: 100vw;
+  height: 5vh;
   justify-content: space-around;
-  padding: 10px 0px;
+  padding: 20px 0px;
   border-radius: 5px;
     box-shadow: -5px 5px 10px #393438;
-      box-shadow:  0px 0px 0 rgb(239,239,239),
-              -1px 1px 0 rgb(233,233,233),
-              -2px 2px 0 rgb(228,228,228),
-              -3px 3px 0 rgb(222,222,222),
-              -4px 4px 0 rgb(216,216,216),
-              -5px 5px 0 rgb(210,210,210),
-              -6px 6px 0 rgb(204,204,204),
-              -7px 7px 0 rgb(198,198,198),
-              -8px 8px 0 rgb(193,193,193),
-              -9px 9px 0 rgb(187,187,187),
-              -10px 10px 0 rgb(181,181,181),
-              -11px 11px 0 rgb(175,175,175),
-              -12px 12px 0 rgb(169,169,169),
-              -13px 13px 0 rgb(163,163,163),
-              -14px 14px 0 rgb(157,157,157),
-              -15px 15px 0 rgb(152,152,152),
-              -16px 16px 0 rgb(146,146,146),
-              -17px 17px 0 rgb(140,140,140), 
-              -18px 18px 0 rgb(134,134,134),
-              -19px 19px 18px rgba(0,0,0,0.25),
-              -19px 19px 1px rgba(0,0,0,0.5),
-              0px 0px 18px rgba(0,0,0,.2);
+      box-shadow:  0px 0px 0 #db607b,
+              -1px 1px 0 #d25c75,
+              -2px 2px 0 #c7566e,
+              -3px 3px 0 #bd4f67,
+              -4px 4px 0 #b64b62,
+              -5px 5px 0 #ab455b,
+              -6px 6px 0 #a23f55,
+              -7px 7px 0 #983a4f,
+              -8px 8px 0 #8c3548,
+              -9px 9px 0 #843143,
+              -10px 10px 0 #762b3b,
+              -11px 11px 0 #692534,
+              -12px 12px 0 #5e202e,
+              -13px 13px 0 #541c29,
+              -14px 14px 0 #4c1925,
+              -15px 15px 0 #441621,
+              -16px 16px 0 #37111a,
+              -17px 17px 0 #2f0e16, 
+              -18px 18px 0 #270b12,
+              -19px 19px 18px #270b12d7,
+              -19px 19px 1px #270b1290,
+              0px 0px 18px #270b125d;
 }
+
 #search{
   width: 200%;
   display: inline;
@@ -81,7 +85,7 @@ body{
 #searchBar{
   font-size: 20px;
   width: 18em;
-  border: 4px solid #C4B2B4;
+  padding: 2px;
   border-radius: 5px;
   margin-bottom: 2px;
   background-color: #faf2f2;
@@ -101,10 +105,13 @@ body{
   box-shadow: inset 4px 4px 3px 3px #870062;
 }
 .title{
-margin: 0px;
-margin-top: 15px;
-height: 1.75em;
-  color: #FDD8DB;
+margin: 15px 0px;
+font-size: 400%;
+height: 1.5em;
+animation: slide 6s linear;
+animation-iteration-count: 1;
+  color: #db607b;
+  /* color: rgb(239,239,239); */
   text-shadow: 0px 0px 0 rgb(239,239,239),
               -1px 1px 0 rgb(233,233,233),
               -2px 2px 0 rgb(228,228,228),
@@ -153,12 +160,32 @@ height: 1.75em;
     transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
   }
 }
+@keyframes slide{
+  0%{
+    transform: translateX(140vw)
+}
+94%{
+  transform: translateX(-25vw)
+}
+96%{
+  transform: translateX(-5vw)
+}
+98%{
+  transform: translateX(0vw)
+}
+99%{
+  transform: translateX(-1vw)
+}
+100%{
+  transform: translateX(0vw)
+}
+}
 #menu-card{
   margin: 20px;
   display: grid;
   height: 180px;
   width: 188px;
-  background-color: #FDD8DB;
+  background-color: rgba(250, 235, 215, 0.596);
   border-radius: 5px;
 }
 #food-img{
@@ -179,4 +206,28 @@ margin: 3%;
 #chickenShake{
   border: 10px solid rgb(74, 90, 106);
   border-radius: 5px;
+}
+#waiting{
+  margin-top: 1em;
+  border: 10px solid #FDD8DB;
+  color: #FDD8DB;
+  border-radius: 5px;
+  width: 30em;
+  height: 300%;
+  background-image: url("https://i.pinimg.com/originals/ae/cc/84/aecc849a13648cbd773cef883cbd1eda.gif");
+  background-position: center;
+  background-size: cover;
+  filter: hue-rotate(-15deg) contrast(80%);
+  display: flex;
+  align-items: last baseline;
+}
+#waiting-txt{
+margin: 4% 12%;
+}
+
+
+#surprise{
+  position: relative;
+  left: -18vh;
+  top: -8vh;
 }
