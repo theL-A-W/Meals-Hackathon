@@ -15,26 +15,24 @@ const initialState = {
   let navigate =useNavigate()
 
 
-  const handleSubmit = (event) => {
-      event.preventDefault()
-        console.log(formState)
-        setFormState(initialState)
-    }
-
-  const handleChange= ( event ) => {
-    setFormState({ ...formState, [event.target.id]: event.target.value })
-  }
-
-
-  //AXIOS CALL --- MEALS
-useEffect(() => {
-  const getMeals = async () => {
-    const response = await axios.get(`https://themealdb.com/api/json/v1/1/filter.php?i=`)
-    console.log(response.data.meals)
+//AXIOS CALL WITH SEARCH
+const handleSubmit = async (event) => {
+    event.preventDefault()
+    if (formState.searchBar){
+        const response = await axios.get(`https://themealdb.com/api/json/v1/1/filter.php?i=${formState.searchBar}`)
+    console.log(formState)
     setMeals(response.data.meals)
+    setFormState(initialState)
+  } else{
+    return(
+        <h1>That is not a main item</h1>
+    )
   }
-  getMeals()
-}, [])
+}
+
+const handleChange= ( event ) => {
+  setFormState({ ...formState, [event.target.id]: event.target.value })
+}
 
 const showMeal = (mealId) => {
     navigate(`/${mealId}`)
@@ -42,6 +40,8 @@ const showMeal = (mealId) => {
 
 return (
     <div className="home">
+
+
         <div id="search">
                 <form onSubmit={handleSubmit}>
                     <input placeholder="search" type="text" id="searchBar" onChange={handleChange} value={formState.searchBar}></input>
@@ -60,17 +60,21 @@ return (
                     ))
                 ) : (
                     <div>
-                        <h1>Finding Meals...</h1>
-                        <h5>While you wait... Enjoy this Chicken Milkshake</h5>
-                        <img id="chickenShake" src="https://www.eatpdq.com/images/default-source/news-images/pdq_chickentender_shake_615x380_news-(1).jpg"></img>
-                        <p>recipe:</p>
-                        <ul>
-                            <li>1 whole chicken</li>
-                            <li>1 gallon of milk</li>
-                        </ul>
+                        <div id="waiting">
+                        <h1 id="waiting-txt">Finding Meals...</h1>
+                        </div>
                     </div>
                 )}
         </div>
     </div>
 )
 }
+
+
+{/* <h5>While you wait... Enjoy this Chicken Milkshake</h5>
+<img id="chickenShake" src="https://www.eatpdq.com/images/default-source/news-images/pdq_chickentender_shake_615x380_news-(1).jpg"></img>
+<p>recipe:</p>
+<ul>
+    <li>1 whole chicken</li>
+    <li>1 gallon of milk</li>
+</ul> */}
