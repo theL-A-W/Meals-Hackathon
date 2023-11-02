@@ -1,11 +1,11 @@
-// imports
 
-const Catagories = () => {
+
+export default function Categories (){
     return (
-        <div>
-            <h2> Catagories </h2>
+        
+        <div className="categories">
+
         </div>
-    )
+)
 }
 
-export default Catagories

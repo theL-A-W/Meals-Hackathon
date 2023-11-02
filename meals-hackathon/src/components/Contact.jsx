@@ -1,6 +1,7 @@
 
 
 
+
 import { useState } from "react"
 
 
@@ -45,6 +46,4 @@ const handleChange = event => setformState({...formState,[event.target.id]: even
         </form>
     </div>
     )
-}
 
-export default Contact
