@@ -1,10 +1,8 @@
-import { useState, useEffect } from 'react'
-import Home from './components/Home'
+
 import './App.css'
 import Header from './components/Header'
-// import { BASE_URL } from './globals'
-import axios from 'axios'
-// import { useNavigate } from 'react-router-dom'
+
+import Main from './components/Main'
 
 
 function App() {
@@ -15,7 +13,8 @@ function App() {
   return (
     <div className='app'>
       <Header/>
-      <Home/>
+      <Main />
+
     </div>
 
   )
