@@ -9,8 +9,8 @@ export default function Nav (){
     return (
         <div>
             <div className="nav">
-                <div className="navItm"><Link to="/"> Home </Link></div>
-                <div className="navItm"><Link to="/Categories"> Categories </Link></div>
+                <Link to="/"> Home <div className="navItm"></div></Link>
+                <Link to="/Categories"> Categories <div className="navItm"></div> </Link>
                 <div className="navItm"><Link to="/Contact"> Contact </Link></div>
             </div>
             {/* <button id="surprise" onClick={() => {showModal= true}}>Surprise</button> */}

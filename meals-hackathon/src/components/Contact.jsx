@@ -1,26 +1,18 @@
-
-
-
-
 import { useState } from "react"
 
 
 const Contact = () => {
-
 let initialState = {
     name: '',
     email: '',
     message: ''
-
 } 
 
 const [formState, setformState] = useState(initialState)
 
 const handleSubmit = (event) => {
     event.preventDefault()
-    
     console.log(formState)
-
     setformState(initialState)
 }
 
@@ -29,8 +21,8 @@ const handleChange = event => setformState({...formState,[event.target.id]: even
 
     return (
     <div id="contact">
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit}>
+        <h2 id="contactTitle">Contact Us</h2>
+        <form id="contactForm" onSubmit={handleSubmit}>
 
                 <label htmlFor='name'>Name</label>
                      <input type='text' id='name' onChange={handleChange} value={formState.name}/>
@@ -46,4 +38,6 @@ const handleChange = event => setformState({...formState,[event.target.id]: even
         </form>
     </div>
     )
+    }
 
+    export default Contact
