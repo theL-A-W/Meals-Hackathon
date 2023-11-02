@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       // Add "react-router-dom" to the list of external packages
-      external: ['react-router-dom'],
+      external: ['./react-router-dom', 'axios'],
     },
   },
 });
